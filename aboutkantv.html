@@ -10,23 +10,26 @@
 <hr/>
 <div id="content">
 
-    KanTV("Kan", aka Chinese PinYin "Kan" or Chinese HanZi "看" or English "watch/listen") , an open source project focus on study and practise state-of-the-art AI technology in real application / real complicated scenario(such as online-TV playback and online-TV transcription(real-time subtitle) and online-TV language translation and online-TV video&audio recording works at the same time) on Android-based device, derived from original ijkplayer , with much enhancements and new features:
+    KanTV("Kan", aka Chinese PinYin "Kan" or Chinese HanZi "看" or English "watch/listen") ,
+    an open source project focus on study and practise state-of-the-art AI technology
+    in real application / real scenario(such as online-TV playback and online-TV transcription(real-time subtitle) 
+    and online-TV language translation and online-TV video&audio recording works at the same time) on mobile device:
 
     <ul>
         <li>
-    ASR(Automatic Speech Recognition, a subfiled of AI) research by the great whisper.cpp
+    ASR(Automatic Speech Recognition, a subfiled of AI) study by the great whisper.cpp 
         </li>
 
         <li>
-    LLM(Large Language Model, a subfiled of AI) research by the great llama.cpp
+    LLM(Large Language Model, a subfiled of AI) study by the great llama.cpp ，Run/experience LLM(such as llama-2-7b, baichuan2-7b, qwen1_5-1_8b, gemma-2b) on Xiaomi 14 using the llama.cpp
         </li>
 
         <li>
-    Real-time English subtitle for English online-TV(aka OTT TV) by the great & excellent & amazing whisper.cpp(Xiaomi 14 or other powerful Android mobile phone is HIGHLY required/recommended for real-time subtitle feature otherwise unexpected behavior would happen)
+    Real-time English subtitle for English online-TV(aka OTT TV) by the great & excellent & amazing whisper.cpp (PoC finished on Xiaomi 14. Xiaomi 14 or other powerful Android mobile phone is HIGHLY required/recommended for real-time subtitle feature otherwise unexpected behavior would happen)
         </li>
 
         <li>
-    Watch online TV and local media by customized FFmpeg 6.1, source code of customized FFmpeg 6.1 could be found in external/ffmpeg according to FFmpeg's license
+    Watch online TV and local media by customized FFmpeg 6.1
         </li>
 
         <li>
@@ -41,6 +44,10 @@
         <li>
     Performance benchmark for Android-based mobile phone for R&D activity
         </li>
+
+        <li>
+            Android turn-key project for AI experts/researchers/developers(whom mightbe not familiar with regular Android software development) focus on device-side AI R&D activity, part of AI R&D(ASR, LLM, TTS, NLP, CV...) activity (AI algorithm validation, AI model validation, performance benchmark......) could be done by Android Studio IDE + a powerful Android phone very easily
+        </li>
     </ul>
 
 
@@ -51,7 +58,8 @@
 
  <li>Access to storage is required to generate necessary temporary files</li>
  <li>Access to device information is required to obtain current phone network status information, distinguishing whether the current network is Wi-Fi or mobile when playing online TV</li>
- <li>Or generate this APK from source code:https://github.com/zhouwg/kantv</li>
+ <li>Access to camera is needed for AI Agent</li>
+ <li>Access to mic(audio recorder) is needed for AI Agent</li>
 
 </div>
 <hr/>
