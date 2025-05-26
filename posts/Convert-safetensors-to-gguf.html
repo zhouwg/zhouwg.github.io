@@ -157,8 +157,24 @@ pip3 install -r requirements.txt
 </p>
 
 <h2>converting safetensors to gguf</h2>
+
+<p>
+pip install -U huggingface_hub
+</p>
+<p>
+export HF_ENDPOINT=https://hf-mirror.com
+</p>
+<p>
+huggingface-cli download --resume-download ByteDance-Seed/Seed-Coder-8B-Reasoning --local-dir ~/Seed-Coder-8B-Reasoning
+</p>
+
+
 <p>
 python convert_hf_to_gguf.py  ~/DeepSeek-R1-Distill-Qwen-1.5B
+</p>
+
+<p>
+python convert_hf_to_gguf.py  ~/Seed-Coder-8B-Reasoning
 </p>
 
 <p>
@@ -171,8 +187,11 @@ $ ls -lah ~/DeepSeek-R1-Distill-Qwen-1.5B/DeepSeek-R1-Distill-Qwen-1.5B-F16.gguf
 
 <h2>quantize from F16 to Q8_0</h2>
 <p>
-
 ./llama-quantize ~/DeepSeek-R1-Distill-Qwen-1.5B/DeepSeek-R1-Distill-Qwen-1.5B-F16.gguf ~/DeepSeek-R1-Distill-Qwen-1.5B/DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf q8_0
+</p>
+
+<p>
+./llama-quantize ~/Seed-Coder-8B-Reasoning/Seed-Coder-8B-Reasoning-F16.gguf ~/Seed-Coder-8B-Reasoning/Seed-Coder-8B-Reasoning-Q8_0.gguf  q8_0
 </p>
 
 <p>
